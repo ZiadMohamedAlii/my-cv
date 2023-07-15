@@ -89,10 +89,10 @@ nav.custom-navbar {
 }
 
 nav.custom-navbar .text-color {
-  color: #e5e5e5; /* Set the default color for the .text-color class */
+  color: #e5e5e5;
 }
 
 nav.custom-navbar .text-color:hover {
-  color: #909090; /* Change to #909090 when you hover over .text-color */
+  color: #909090;
 }
 </style>
