@@ -1,10 +1,9 @@
 <template>
   <header>
-    <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
       <div class="container">
-        <!-- <a class="navbar-brand" href="#">{{ name }}</a> -->
         <router-link
-          class="navbar-brand"
+          class="navbar-brand text-color"
           :to="{ name: 'home' }"
           @click="scrollToTop"
           >{{ name }}</router-link
@@ -26,56 +25,35 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item ms-lg-3 mx-3">
-              <!-- <a class="nav-link active" aria-current="page" href="#">About</a> -->
               <router-link
-                class="nav-link active"
+                class="nav-link active text-color"
                 aria-current="page"
                 :to="{ name: 'home' }"
-                >Home</router-link
+                >{{ Home }}</router-link
               >
             </li>
             <li class="nav-item ms-lg-3 mx-3">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Contact</a
+              <a
+                class="nav-link active text-color"
+                aria-current="page"
+                href="#"
+                >{{ contact }}</a
               >
             </li>
             <li class="nav-item ms-lg-3 mx-3">
-              <!-- <a class="nav-link active" aria-current="page" href="#">API</a> -->
               <router-link
-                class="nav-link active"
+                class="nav-link active text-color"
                 aria-current="page"
                 :to="{ name: 'api' }"
-                >API</router-link
+                >{{ Api }}</router-link
               >
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- <div class="background-image">
-      <div class="overlay d-flex justify-content-center">
-        <div class="container">
-          <div
-            class="row vh-100 align-items-center text-center d-flex justify-content-center"
-          >
-            <div class="col-lg-12 col-md-6 col-sm-6 mt-5">
-              <h4 class="text-center">{{ name }}</h4>
-              <span class="display-2 text-center">{{ job }}</span>
-              <div class="arrow-down-icon mt-5">
-                <a
-                  class="bi bi-arrow-down-circle text-center text-dark display-6"
-                  href="#"
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div> -->
   </header>
 </template>
-
 <script>
 export default {
   name: "AppHeader",
@@ -83,6 +61,9 @@ export default {
     return {
       name: "ZIAD MOHAMED",
       job: "WEBSITE DEVELOPER",
+      Home: "Home",
+      Api: "API",
+      contact: "Contact",
     };
   },
   methods: {
@@ -102,53 +83,16 @@ export default {
   margin: 0;
 }
 
-nav {
+nav.custom-navbar {
   /* netflex navbar */
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.7) 10%, transparent);
 }
 
-.nav-link {
-  position: relative;
+nav.custom-navbar .text-color {
+  color: #e5e5e5; /* Set the default color for the .text-color class */
 }
 
-.nav-link::after {
-  content: "";
-  opacity: 0;
-  transition: all 0.2s;
-  height: 1px;
-  width: 100%;
-  background-color: black;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+nav.custom-navbar .text-color:hover {
+  color: #909090; /* Change to #909090 when you hover over .text-color */
 }
-
-.nav-link:hover::after {
-  opacity: 1;
-}
-
-.background-image {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  background-image: url("@/assets/ImageAssets/WhatsApp Image 2023-07-11 at 02.14.06.png");
-  background-size: cover;
-}
-.overlay {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-/* nav {
-  glass effect
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-  );
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-} */
 </style>
