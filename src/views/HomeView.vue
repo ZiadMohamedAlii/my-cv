@@ -11,7 +11,7 @@ import AboutContainer from "@/components/AboutContainer.vue";
 import SkillsSection from "@/components/SkillsSection.vue";
 import TimelineComp from "@/components/TimelineComp.vue";
 import FooterComp from "@/components/FooterComp.vue";
-import Test from "../components/Test.vue";
+import Test from "../components/ImageComp.vue";
 export default {
   name: "Home",
   components: {
