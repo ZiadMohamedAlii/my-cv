@@ -1,12 +1,12 @@
 <template>
-  <body>
+  <div class="background">
     <div class="container">
       <div class="row vh-100 d-flex align-items-center justify-content-center">
-        <div class="wrapper">
+        <div class="wrapper col-6">
           <div class="shape-1"></div>
           <div class="shape-2"></div>
           <div class="card">
-            <h2>{{ description }}</h2>
+            <h2 class="text-center">{{ description }}</h2>
             <div class="skills">
               <div class="details">
                 <span>HTML</span>
@@ -74,7 +74,7 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
 </template>
 
 <script>
@@ -94,17 +94,11 @@ export default {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
-body {
+.background {
   background-color: #909090;
 }
 
-.wrapper {
-  width: 40%;
-  min-width: 570px;
-  position: absolute;
-}
 .card {
   font-family: "Poppins", sans-serif;
   color: black;
@@ -119,7 +113,6 @@ body {
 h2 {
   margin-bottom: 50px;
   letter-spacing: 2px;
-  text-align: center;
   font-size: 33px;
   font-weight: bold;
 }
@@ -128,15 +121,15 @@ h2 {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .bar {
-  position: relative;
+  /* position: relative; */
   border: 2px solid var(--bar-color);
   border-radius: 20px;
 }
 .bar div {
-  position: relative;
+  /* position: relative; */
   width: 0;
   height: 9px;
   border-radius: 10px;
