@@ -1,25 +1,19 @@
 <template>
-  <test></test>
-  <About-container></About-container>
-  <timeline-comp></timeline-comp>
+  <introduction></introduction>
   <skills-section></skills-section>
   <footer-comp></footer-comp>
 </template>
 
 <script>
-import AboutContainer from "@/components/AboutContainer.vue";
+import introduction from "../components/HeaderComp.vue";
 import SkillsSection from "@/components/SkillsSection.vue";
-import TimelineComp from "@/components/TimelineComp.vue";
 import FooterComp from "@/components/FooterComp.vue";
-import Test from "../components/ImageComp.vue";
 export default {
   name: "Home",
   components: {
-    AboutContainer,
+    introduction,
     SkillsSection,
-    TimelineComp,
     FooterComp,
-    Test,
   },
 };
 </script>

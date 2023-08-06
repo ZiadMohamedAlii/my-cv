@@ -9,12 +9,7 @@
             <h1 class="test">{{ name }}</h1>
             <div class="animated-text">I'm <span></span></div>
             <h2>happy to see u hear!!</h2>
-            <div class="arrow-down-icon mt-5">
-              <!-- <a
-                class="bi bi-arrow-down-circle text-center text-dark display-6"
-                href="#"
-              ></a> -->
-            </div>
+            <div class="arrow-down-icon mt-5"></div>
           </div>
         </div>
       </div>
