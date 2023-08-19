@@ -10,6 +10,17 @@
             <div class="animated-text">I'm <span></span></div>
             <h2>happy to see u hear!!</h2>
             <div class="arrow-down-icon mt-5"></div>
+            <a type="button" class="btn btn-outline-dark px-4" download="">
+              Content me !
+            </a>
+            <a
+              href="https://drive.google.com/file/d/1UeleQs3xQRIJ85Kt_SxjX5sNHKve5RTB/view?usp=sharing"
+              type="button"
+              class="btn btn-dark mx-4 x px-5"
+              download="Ziad_Mohamed _ Web Developer_Resume_18-06-2023-16-23-23.pdf"
+            >
+              My CV
+            </a>
           </div>
         </div>
       </div>
@@ -37,6 +48,10 @@ export default {
   background-color: rgba(0, 0, 0, 0.3);
 } */
 
+/* .x {
+  padding-left: 3%;
+  padding-right: 3%;
+} */
 .animated-text {
   font-size: 60px;
   font-weight: 600;
